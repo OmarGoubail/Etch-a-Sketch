@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.grid{
+    border: 1px solid #bfbfbf;
+    height: 25px;
+    width: 25px;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(16, 25px [col-start]);
+    margin: auto;
+    height: 80vh;
+    width: 80vh;
+    justify-content: center;
+    align-content: center;
+   
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    font-weight: 800;
+    padding: 20px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    padding: 0 2 rem;
+    text-align: center;
+}
